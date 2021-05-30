@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+}
+.box{
+    display: flex;
+    height: 1000px;
+    justify-content: center;
+    align-items:center;
+
+    
+    
+
+}
+body::before{
+    background: url("https://source.unsplash.com/weekly?weather")no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    z-index:-1;
+}
+.data{
+    border: 2px solid rgb(63, 61, 61);
+    display: block;
+width: 352px;
+height: 400px;
+padding-top: 40px;
+border-radius: 30px;
+}
+.city{
+    
+    text-align: center;
+    margin-top: 30px;
+   
+    
+}
+.icon{
+    position: absolute;
+    bottom: 203px;
+    margin-left: 147px;
+    font-size: xxx-large;
+    color: yellow;
+    animation-name: move;
+    animation-duration: 2s;
+
+}
+
+@keyframes move {
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 147px;
+    }
+    
+}
+.datetime{
+    margin-top: 40px;
+    position: absolute;
+    bottom: 23px;
+    margin-left: 119px;
+    animation-name: updown;
+    animation-duration: 2s;
+    font-family: cursive;
+    font-size: larger;
+}
+@keyframes updown {
+    from{
+        bottom: -35px;
+    }
+    to{
+        bottom: 23px;
+    }
+    
+}
+#cit{
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+}
+.temp{
+    position: absolute;
+    bottom: 106px;
+    margin-left: 112px;
+    font-size: xxx-large;
+}
+/* .class::before */
